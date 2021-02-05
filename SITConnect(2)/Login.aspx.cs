@@ -72,10 +72,7 @@ namespace SITConnect_2_
             {
                 lblMessage.Text += " You have tried to login 5 times,try again later! </br>";
             }
-            if (!ValidateCaptcha())
-            {
-                lblMessage.Text += "You did not pass the ReCaptcha Validation, try again later!";
-            }
+            
             if (lblMessage.Text == "")
             {
                 return true;

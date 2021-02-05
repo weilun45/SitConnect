@@ -126,10 +126,7 @@ namespace SITConnect_2_
             {
                 lblMsg.Text += "Date of Birth is not valid,please check and re-enter if necessary. </br>";
             }
-            if (!ValidateCaptcha())
-            {
-                lblMsg.Text += "You did not pass the ReCaptcha Validation, try again later!";
-            }
+            
             if (lblMsg.Text == "")
             {
                 return true;

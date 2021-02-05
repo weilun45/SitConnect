@@ -20,7 +20,7 @@ namespace SITConnect_2_
             Session.Abandon();
             Session.RemoveAll();
 
-            Response.Redirect("Login.aspx", false);
+            
 
             if (Request.Cookies["ASP.NET_SessionId"] != null)
             {
@@ -32,6 +32,8 @@ namespace SITConnect_2_
                 Request.Cookies["AuthToken"].Value = string.Empty;
                 Request.Cookies["AuthToken"].Expires = DateTime.Now.AddMonths(-20);
             }
+
+            Response.Redirect("Login.aspx", false);
         }
 
         protected void btnChangePwd_Click(object sender, EventArgs e)

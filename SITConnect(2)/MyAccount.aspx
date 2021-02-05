@@ -4,7 +4,7 @@
         <br />
     </p>
     <p>
-        <asp:Button ID="btnLogout" runat="server" Text="Logout" onClick="LogoutMe"/>
+        <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="LogoutMe"/>
     </p>
     <p>
         <asp:Button ID="btnChangePwd" runat="server" Text="Change Password" OnClick="btnChangePwd_Click" />

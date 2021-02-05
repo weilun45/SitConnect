@@ -401,7 +401,7 @@ namespace SITConnect_2_
 
             string captchaResponse = Request.Form["g-captcha-response"];
 
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret=6Ld7JEUaAAAAAIjQIFeTtCAD7tAmRZ1VUd1STz41 &response" + captchaResponse);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret= &response" + captchaResponse);
 
 
             try

@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registration.aspx.cs" Inherits="SITConnect_2_.Registration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ld7JEUaAAAAAESYnfxBDdqz3pxFI8LaD5pDMrGN"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render="></script>
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6Ld7JEUaAAAAAESYnfxBDdqz3pxFI8LaD5pDMrGN', { action: 'Register' }).then(function (token) {
+            grecaptcha.execute('', { action: 'Register' }).then(function (token) {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         });
@@ -92,7 +92,7 @@
             
         </div>
         
-        <div class ="g-recaptcha" data-sitekey="6Lf1JkQaAAAAAAWYGvKP0QmJnBW6ocWu3uumQUpM">
+        <div class ="g-recaptcha" data-sitekey="">
         <input type="hidden" id="g-captcha-response" name="g-captcha-response" />
                 <asp:Label ID="lblMsg" runat="server" ForeColor="Red"></asp:Label>
             <br />

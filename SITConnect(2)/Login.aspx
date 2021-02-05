@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="SITConnect_2_.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le-CUgaAAAAAMnGLLi_D0PQzEfFjctXNk-FZKmN"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render="></script>
     <script>
          grecaptcha.ready(function () {
-             grecaptcha.execute(' 6Le-CUgaAAAAAMnGLLi_D0PQzEfFjctXNk-FZKmN ', { action: 'Login' }).then(function (token) {
+             grecaptcha.execute('  ', { action: 'Login' }).then(function (token) {
          document.getElementById("g-recaptcha-response").value = token;
          });
          });
